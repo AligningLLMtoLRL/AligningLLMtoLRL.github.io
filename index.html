@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-<style>
-
-    .organizer-photo {
-        width: 100px;  /* Example width */
-        height: 100px; /* Example height */
-        object-fit: cover; /* This ensures the image covers the area without distortion */
-    }
-
-</style>
-
 <head>
     <title>Tutorial: Aligning LLMs to Low-Resource Languages</title>
     <style>
@@ -29,6 +19,19 @@
         section#showcase h1 { margin-top: 100px; font-size: 55px; margin-bottom: 10px; }
         section#main { padding: 15px; }
         footer { padding: 20px; margin-top: 20px; color: #ffffff; background-color: #333; text-align: center; }
+
+        .organizer-photo {
+            width: 350px;  /* Example width */
+            height: 350px; /* Example height */
+            object-fit: cover; /* This ensures the image covers the area without distortion */
+            margin: 5px;
+        }
+
+        .organizer-row {
+            display: flex;
+            justify-content: center; /* Выравнивание по центру */
+            flex-wrap: wrap; /* Перенос элементов на новую строку, если они не помещаются */
+        }
     </style>
 </head>
 <body>
@@ -39,7 +42,7 @@
             </div>
             <nav>
                 <ul>
-                    <li class="current"><a href="#introduction">Introduction</a></li>
+                    <li class="current"><a href="#introduction">Abstract</a></li>
                     <li><a href="#materials">Materials</a></li>
                     <li><a href="#slides">Slides</a></li>
                     <li><a href="#organizers">Organizers</a></li>
@@ -59,8 +62,9 @@
     <section id="main">
         <div class="container">
             <article id="introduction">
-                <h2>Introduction</h2>
-                <p>Introduction to the tutorial topic...</p>
+                <h2>Abstract</h2>
+                <p>This tutorial provides a detailed guide on collecting data for aligning large language models (LLMs) with low-resource languages (LRLs). <br>
+                    It addresses the challenge of data scarcity in these languages and introduces a pipeline for generating high-quality data, using Swahili as a primary example. The tutorial covers strategies for dataset collection and alignment of LLMs to LRLs, offering comprehensive guidance on producing and utilizing high-quality data for language technology development in under-resourced languages.</p>
             </article>
 
             <article id="materials">
@@ -76,15 +80,39 @@
             <article id="organizers">
                 <h2>Organizers</h2>
                 <div class="organizer-row">
-                    <img src="imgs/nazar.jpg" alt="Nazar Beknazarov", class="organizer-photo">
-                    <img src="imgs/ahmet.jpg" alt="Ahmet U ̈stu ̈n", class="organizer-photo">
-                    <img src="imgs/marzieh.jpg" alt="Marzieh Fadaee", class="organizer-photo">
+                    <figure>
+                        <img src="imgs/nazar.jpg" alt="Nazar Beknazarov", class="organizer-photo">
+                        <figcaption>Nazar Beknazarov <br> Toloka AI</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="imgs/ahmet.jpg" alt="Ahmet U ̈stu ̈n", class="organizer-photo">
+                        <figcaption>Ahmet Ustun <br> Cohere for AI</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="imgs/marzieh.jpg" alt="Marzieh Fadaee", class="organizer-photo">
+                        <figcaption>Marzieh Fadaee <br> Cohere for AI </figcaption>
+                    </figure>
+                    
+                    
+                    
                 </div>
+                <hr>
                 <div class="organizer-row">
-                    <img src="path_to_image4.jpg" alt="Organizer 4">
-                    <img src="path_to_image5.jpg" alt="Organizer 5">
-                    <img src="path_to_image6.jpg" alt="Organizer 6">
-                    <img src="path_to_image7.jpg" alt="Organizer 7">
+                    <figure>
+                        <img src="imgs/natasha.jpg" alt="Natalia Fedorova", class="organizer-photo">
+                        <figcaption>Natalia Fedorova <br> Toloka AI</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="imgs/sergey.png" alt="Sergey Koshelev", class="organizer-photo">
+                        <figcaption>Sergey Koshelev <br> Toloka AI</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="imgs/alise.webp" alt="Alisa Smirnova", class="organizer-photo">
+                        <figcaption>Alisa Smirnova<br> Toloka AI</figcaption>
+                    </figure>
+
                 </div>
             </article>
 
